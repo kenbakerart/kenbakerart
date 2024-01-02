@@ -1,0 +1,51 @@
+body {
+    background-color: #111;
+    color: #fff;
+}
+
+section {
+    text-align: center;
+}
+
+.contact-section {
+    margin-bottom: 50px; /* Adjust this value as needed */
+}
+
+
+/* Show it is fixed to the top */
+body {
+    min-height: 75rem;
+    padding-top: 4.5rem;
+  }
+
+img.gallery-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.artist-profile-pic {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Height equal to width for a perfect circle */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the area without being stretched */
+    display: block; /* For proper alignment */
+    margin: 0 auto; /* Centers the image horizontally */
+}
+
+//* For mobile devices */
+@media (max-width: 767px) {
+    .carousel-item img {
+      width: 100%; /* Full width of the container */
+      height: auto; /* Auto-adjust height to maintain aspect ratio */
+    }
+  }
+  
+  /* For desktop and larger devices */
+  @media (min-width: 768px) {
+    .carousel-item img {
+      width: 50%; /* Adjust width as needed */
+      height: auto; /* Auto-adjust height to maintain aspect ratio */
+    }
+  }
+  
