@@ -30,3 +30,13 @@ document.getElementById('scrollToContact').addEventListener('click', function(e)
     e.preventDefault();
     scrollToElement('contact', 3000); // 1000ms for the scroll duration
 });
+
+document.addEventListener('click', function(event) {
+    var isClickInsideNavbar = document.querySelector('.navbar').contains(event.target);
+    var navbarToggler = document.querySelector('.navbar-toggler');
+    var navbarCollapsed = document.querySelector('#navbarNav').classList.contains('show');
+
+    if (!isClickInsideNavbar && navbarCollapsed && navbarToggler) {
+        navbarToggler.click();
+    }
+});
